@@ -101,10 +101,12 @@ in rec {
   beta = selectHighestVersion latest (generic {
     version = "570.86.10";
     sha256_64bit = "sha256-DZ1wWcBG8LwREnRuDjB9YTbHy5WKaljbgMC1bQ5sFJ8=";
-    sha256_aarch64 = "sha256-aDVc3sNTG4O3y+vKW87mw+i9AqXCY29GVqEIUlsvYfE=";
+    # sha256_aarch64 = "sha256-aDVc3sNTG4O3y+vKW87mw+i9AqXCY29GVqEIUlsvYfE=";
     openSha256 = "sha256-/tM3n9huz1MTE6KKtTCBglBMBGGL/GOHi5ZSUag4zXA=";
-    settingsSha256 = "sha256-H7uEe34LdmUFcMcS6bz7sbpYhg9zPCb/5AmZZFTx1QA=";
     url = "https://github.com/flathub/org.freedesktop.Platform.GL.nvidia/releases/download/cuda/NVIDIA-Linux-x86_64-570.86.10.run";
+    useSettings = false;
+    usePersistenced = false;
+    useFabricmanager = false;
   });
 
   # Vulkan developer beta driver
